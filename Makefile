@@ -15,6 +15,7 @@ CFLAGS += -Winit-self -Wstrict-aliasing -fsanitize=address -fno-omit-frame-point
 
 .PHONY: clang
 clang: CC = clang
+clang: CFLAGS = -O3
 clang: $(BIN)
 
 .PHONY: gcc
